@@ -2,8 +2,11 @@ package com.uberApp.dto;
 
 import com.uberApp.entities.enums.PaymentMethod;
 import com.uberApp.entities.enums.RideStatus;
+
 import jakarta.persistence.*;
+
 import org.locationtech.jts.geom.Point;
+
 import java.time.LocalDateTime;
 
 public class RideDto {

@@ -2,10 +2,14 @@ package com.uberApp.entities;
 
 import com.uberApp.entities.enums.PaymentMethod;
 import com.uberApp.entities.enums.RideRequestStatus;
+
 import jakarta.persistence.*;
+
 import lombok.Getter;
 import lombok.Setter;
-import org.hibernate.annotations.CreationTimestamp;
+
+import org.hibernate.annotations.CreationTimestamp
+;
 import org.locationtech.jts.geom.Point;
 
 import java.time.LocalDate;
