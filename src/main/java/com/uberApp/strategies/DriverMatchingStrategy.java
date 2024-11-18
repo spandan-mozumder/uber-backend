@@ -1,11 +1,11 @@
 package com.uberApp.strategies;
 
-import com.uberApp.dto.RideRequestDto;
 import com.uberApp.entities.Driver;
+import com.uberApp.entities.RideRequest;
 
 import java.util.List;
 
 public interface DriverMatchingStrategy {
 
-    List<Driver> findMatchingDriver(RideRequestDto rideRequestDto);
+    List<Driver> findMatchingDriver(RideRequest rideRequest);
 }
