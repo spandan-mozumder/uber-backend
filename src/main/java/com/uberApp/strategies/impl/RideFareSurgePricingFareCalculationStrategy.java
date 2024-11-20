@@ -21,3 +21,4 @@ public class RideFareSurgePricingFareCalculationStrategy implements RideFareCalc
         return distance*RIDE_FARE_MULTIPLIER*SURGE_FACTOR;
     }
 }
+  

@@ -2,9 +2,7 @@ package com.uberApp.entities;
 
 import com.uberApp.entities.enums.PaymentMethod;
 import com.uberApp.entities.enums.PaymentStatus;
-
 import jakarta.persistence.*;
-
 import org.hibernate.annotations.CreationTimestamp;
 
 import java.time.LocalDateTime;
