@@ -48,8 +48,6 @@ public class RiderServiceImpl implements RiderService {
         List<Driver> drivers = rideStrategyManager
                 .driverMatchingStrategy(rider.getRating()).findMatchingDriver(rideRequest);
 
-//        TODO : Send notification to all the drivers about this ride request
-
         return modelMapper.map(savedRideRequest, RideRequestDto.class);
     }
 

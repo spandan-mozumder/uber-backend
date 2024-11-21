@@ -74,7 +74,7 @@ public class DriverServiceImpl implements DriverService {
         }
 
         ride.setStartedAt(LocalDateTime.now());
-        Ride savedRide = rideService.updateRideStatus(ride.getId(), RideStatus.ONGOING);
+        Ride savedRide = rideService.updateRideStatus(ride, RideStatus.ONGOING);
         return modelMapper.map(savedRide, RideDto.class);
     }
 
@@ -103,6 +103,4 @@ public class DriverServiceImpl implements DriverService {
         return driverRepository.findById(2L).orElseThrow(() -> new ResourceNotFoundException("Driver not found with " +
                 "id "+2));
     }
-
-
 }
